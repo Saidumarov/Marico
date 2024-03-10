@@ -6,7 +6,7 @@ const Share = () => {
     <>
       <section>
         <div className="container">
-          <div className="share_w">
+          <div className="share_w" data-aos="fade-up">
             <h4>STEP 2</h4>
             <h2>Share Your Homepage</h2>
             <p className="p">
@@ -15,7 +15,7 @@ const Share = () => {
             </p>
           </div>
           <div className="share_item_w">
-            <div className="share_left">
+            <div className="share_left" data-aos="flip-left">
               <h4>One Link</h4>
               <h2>
                 <span>ALL You Create.</span> <br />
@@ -34,7 +34,7 @@ const Share = () => {
                 </div>
               </div>
             </div>
-            <div className="share_right">
+            <div className="share_right" data-aos="flip-right">
               <h4>Collect Subscribers</h4>
               <h2>
                 <span>

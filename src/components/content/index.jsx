@@ -6,7 +6,7 @@ const Content = () => {
     <>
       <section>
         <div className="container">
-          <div className="content">
+          <div className="content" data-aos="fade-up">
             <h4>STEP 1</h4>
             <h2>Connect Your Content</h2>
             <p className="p">
@@ -22,7 +22,11 @@ const Content = () => {
             />
           </div>
           <div className="content_w">
-            <div className="content_left">
+            <div
+              className="content_left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <h4>Your Homepage</h4>
               <h2>Your Content.</h2>
               <h2>
@@ -56,7 +60,11 @@ const Content = () => {
                 />
               </div>
             </div>
-            <div className="content_right"></div>
+            <div
+              className="content_right"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            ></div>
           </div>
         </div>
       </section>

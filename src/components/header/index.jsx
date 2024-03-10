@@ -9,9 +9,21 @@ const Header = () => {
   const [active, setActive] = useState(false);
   const siteBar = () => {
     setActive(!active);
+    if (active) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   };
   return (
-    <Headroom>
+    <Headroom
+      style={{
+        webkitTransition: "all .5s ease-in-out",
+        mozTransition: "all .5s ease-in-out",
+        oTransition: "all .5s ease-in-out",
+        transition: "all .5s ease-in-out",
+      }}
+    >
       <header>
         <div className="container">
           <div className="header_item">

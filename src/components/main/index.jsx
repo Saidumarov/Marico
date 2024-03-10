@@ -37,8 +37,8 @@ const Main = () => {
             </div>
           </div>
           <div className="marico">
-            <h2>Why Creators Love Marico </h2>
-            <div className="marico_wrapper">
+            <h2 data-aos="fade-up">Why Creators Love Marico </h2>
+            <div className="marico_wrapper" data-aos="fade-up">
               <div className="card_marico">
                 <h3>
                   <Svg1 /> Reduced Anxiety

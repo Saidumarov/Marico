@@ -10,19 +10,19 @@ const Experts = () => {
       <section>
         <div className="container">
           <div className="experts">
-            <h2>Experts Agree</h2>
-            <div className="experts_w">
+            <h2 data-aos="fade-up">Experts Agree</h2>
+            <div className="experts_w" data-aos="fade-up">
               <div className="card_ex">
                 <img src={img} alt="" />
               </div>
             </div>
-            <div className="experts_w_two">
+            <div className="experts_w_two" data-aos="fade-up">
               <h2>
                 We've helped over 1,000 creatorsre <br /> claim control of their
                 audience.
               </h2>
             </div>
-            <div className="extens_w_thre">
+            <div className="extens_w_thre" data-aos="fade-up">
               <img src={logo} alt="" className="logo" />
               <h2>Get Started Now</h2>
               <h4>Setup is easy and takes under 5 minutes.</h4>

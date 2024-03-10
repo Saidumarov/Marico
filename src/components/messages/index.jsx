@@ -7,7 +7,7 @@ const Messages = () => {
     <>
       <section className="message">
         <div className="container">
-          <div className="content">
+          <div className="content" data-aos="fade-up">
             <h4>STEP 3</h4>
             <h2>Send Emails & Text Messages</h2>
             <p className="p">
@@ -16,7 +16,11 @@ const Messages = () => {
             </p>
           </div>
           <div className="content_w">
-            <div className="content_left">
+            <div
+              className="content_left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <h4>Create & Share</h4>
               <h2>Reach Your</h2>
               <h2>
@@ -52,7 +56,11 @@ const Messages = () => {
                 />
               </div>
             </div>
-            <div className="content_right"></div>
+            <div
+              className="content_right"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            ></div>
           </div>
         </div>
       </section>
