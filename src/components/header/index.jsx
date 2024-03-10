@@ -2,19 +2,21 @@ import "./index.scss";
 import logo from "../../assets/images/logo.png";
 import Button from "../button";
 import Svg from "../../constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Headroom from "react-headroom";
 
 const Header = () => {
   const [active, setActive] = useState(false);
   const siteBar = () => {
     setActive(!active);
-    if (active) {
-      document.body.style.overflow = "auto";
-    } else {
-      document.body.style.overflow = "hidden";
-    }
   };
+  useEffect(() => {
+    if (active) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [active]);
   return (
     <Headroom
       style={{
@@ -36,14 +38,20 @@ const Header = () => {
                 <img src={logo} alt="" />
                 <h1>Marico</h1>
               </div>
-              <div className="header_a">
+              <div className="header_a" onClick={() => setActive(!active)}>
                 <a href="#" id="one">
                   Use Cases
                   <Svg />
                 </a>
-                <a href="#">About</a>
-                <a href="#">Pricing</a>
-                <a href="#">Blog</a>
+                <a href="#" onClick={() => setActive(!active)}>
+                  About
+                </a>
+                <a href="#" onClick={() => setActive(!active)}>
+                  Pricing
+                </a>
+                <a href="#" onClick={() => setActive(!active)}>
+                  Blog
+                </a>
               </div>
               <div className="register_w">
                 <Button

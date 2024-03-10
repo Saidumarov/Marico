@@ -1,7 +1,16 @@
+import { useEffect } from "react";
 import { Svg6 } from "../../constants";
 import Button from "../button";
 import "./index.scss";
+import { useState } from "react";
 const Share = () => {
+  const [time, setTime] = useState();
+  useEffect(() => {
+    setInterval(() => {
+      let time_one = new Date().toLocaleTimeString("it-It").slice(0, 5);
+      setTime(time_one);
+    }, 1000);
+  }, [time]);
   return (
     <>
       <section>
@@ -22,7 +31,7 @@ const Share = () => {
                 One Link
               </h2>
               <div className="imgbg">
-                <h4>9:41</h4>
+                <h4>{time}</h4>
                 <div className="phone_w">
                   <div className="phone_w_item">
                     <p className="a">AA</p>
