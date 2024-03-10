@@ -230,12 +230,13 @@ main {
 @media screen and (max-width: 370px) {
   main {
     .btns_w {
-      width: 90%;
+      width: 100%;
       h3 {
         font-size: 20px;
       }
       .buttons {
         flex-wrap: wrap;
+        width: 100%;
         button {
           width: 100% !important;
           margin-bottom: 20px;

@@ -62,9 +62,12 @@ header {
         padding-left: 30px;
         color: rgba(112, 112, 112, 1);
         transition: 0.2s;
+        display: flex;
+        align-items: center;
         svg {
           margin-left: 8px;
           fill: #707070;
+          margin-top: 2px;
         }
       }
       a:hover {
