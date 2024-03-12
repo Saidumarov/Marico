@@ -7,9 +7,13 @@ const Main = () => {
     <>
       <main>
         <div className="container">
-          <h2 className="text">Own your audience.</h2>
-          <h2 className="text1">So you don't lose them</h2>
-          <div className="btns_w">
+          <h2 className="text" data-aos="fade-up">
+            Own your audience.
+          </h2>
+          <h2 className="text1" data-aos="fade-up">
+            So you don't lose them
+          </h2>
+          <div className="btns_w" data-aos="fade-up">
             <h3>Turn your audience into email and text message subscribers.</h3>
             <div className="buttons">
               <Button
