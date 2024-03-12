@@ -2,7 +2,16 @@ import Button from "../button";
 import "./index.scss";
 import img from "../../assets/images/Dot.png";
 import { Svg1, Svg2, Svg3 } from "../../constants";
+import { useEffect, useState } from "react";
 const Main = () => {
+  const [count, setcount] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      if (count < 1000) {
+        setcount(count + 1);
+      }
+    }, 1);
+  }, [count]);
   return (
     <>
       <main>
@@ -35,7 +44,7 @@ const Main = () => {
             <div className="dot_w">
               <img src={img} alt="" className="dot" />
               <p>
-                <span className="count"> 1000+</span>
+                <span className="count"> {count}+</span>
                 <span> creators have already started</span>
               </p>
             </div>
